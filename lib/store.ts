@@ -19,8 +19,8 @@ export type State = {
 export type Actions = {
   addTask: (title: string, description?: string) => void
   dragTask: (id: string | null) => void
-  removeTask: (title: string) => void
-  updateTask: (title: string, status: Status) => void
+  removeTask: (id: string) => void
+  updateTask: (id: string, status: Status) => void
 }
 
 export type StoreProps = State & Actions
