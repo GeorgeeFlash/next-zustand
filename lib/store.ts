@@ -23,7 +23,9 @@ export type Actions = {
   updateTask: (title: string, status: Status) => void
 }
 
-export const useTaskStore = create<State & Actions>()(
+export type StoreProps = State & Actions
+
+export const useTaskStore = create<StoreProps>()(
   persist(
     set => ({
       tasks: [],
