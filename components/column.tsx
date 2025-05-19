@@ -33,7 +33,7 @@ export default function Column({
   }
 
   return (
-    <section className='flex flex-col min-h-[250px] md:min-h-[600px]'>
+    <section className='flex flex-col min-h-[250px] md:min-h-[600px] w-full'>
       <h2 className='ml-1 font-serif text-2xl font-semibold'>{title}</h2>
 
       <div
